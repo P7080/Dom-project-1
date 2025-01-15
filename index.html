@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom project 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            font-size: 20px;
+            color: coral;
+            background-color: aqua;
+            margin: 2rem;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        Hello, I'm in Div!
+    </div>
+    <script>
+        const doc = document;
+        doc.title = "DOM Manipulation Example";
+        const container = document.getElementById("container");
+        console.log(container);
+        container.style.height = '300px';
+        container.style.width = '300px';
+        container.style.border = '2px solid black';
+        container.style.fontSize = '32px';
+        container.style.margin = '3rem';
+        container.style.color = 'blue';
+        container.style.backgroundColor = 'yellow';
+        container.style.textAlign = 'center';
+        container.style.borderRadius = '5px';
+        container.style.padding = '15px';
+
+    </script>
+</body>
+
+</html>
